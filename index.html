@@ -14,6 +14,25 @@
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
+      <section class="card" id="cli-secton">
+        <h2>CLI Commands</h2>
+        <ul>
+          <li>cd: migrate to directory</li>
+          <li>pwd: print working directory</li>
+          <li>ls: list files and directories on computer</li>
+          <li>code .: opens VS code with working directory</li>
+          <li>cd ..: navigate backword one directory at a time</li>
+          <li>mkdir: make directory</li>
+          <li>touch: create a new file</li>
+          <li>open: open file-name</li>
+          <li>ls -al ~/.ssh: checks for existing ssh keys</li>
+          <li>ssh-keygen -t ed25519 -C "email": generate ssh key</li>
+          <li>eval "$(ssh-agent -s)": start ssh agent</li>
+          <li>ssh-add: add ssh key to ssh agent</li>
+          <li>ssh -T git@github.com: verify fingerprint matches GH's RSA pub. key fingerprint</li>
+        </ul>
+      </section>
+
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
@@ -36,10 +55,14 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>Enter your Git notes here</li>
-          <li>Git is your remote repo for working and collaborating on code</li>
+          <li>git clone "copied SSH value": clone GH repository to local machine - make sure cd is correct</li>
+          <li>git checkout -b feature/"feature-name": create a feature branch and switches to it</li>
+          <li>git add -A: stages changes - informs git that the changes will be added in the next commit</li>
+          <li>git commit -m "message": captures snapshot of previously staged changes</li>
+          <li>git pull origin main: pulls main branch of remote repo to local repo</li>
+          <li>git push origin feature/"feature-name": pushes local changes to remote repo</li>
           <li>git status: checks what branch we are in</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+
         </ul>
       </section>
 
